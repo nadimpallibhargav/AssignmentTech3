@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./style.css">
+  <title>Assignment tech3</title>
+</head>
+<body>
+
+<head></head>
+<body>
+  <header><nav class="text-center bg-primary text-white py-4"><div><i class="fas fa-gamepad"></i></div><span>Bulls and Cows game</span></nav></header>
+  <div class="w-100 container-fluid text-center py-5 bg-secondary">
+	    
+    <div class="input-group mb-5 w-25 m-auto">
+      <input max="9999" min="0000" placeholder="e.g. 1234" id="try" onkeydown = "if (event.keyCode == 13) 
+      document.getElementById('submit').click()" type="number" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button id="submit" onclick="check()" class="btn bg-success text-white" type="submit" id="button-addon2">GUESS</button>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mb-3">
+        <div class="w-100 text-white mb-3"> <h4>RESULT</h4></div>
+        <div class="output bg-white p-5 text-center">
+          <p class="result"></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+      
+          <div class="w-100 text-white mb-3"> <h4>ABOUT GAME</h4></div>
+         
+          <textarea class="form-control p-5 text-center" name="console" id="console" cols="30" rows="13">
+          You enter your guess code, computer compares it with the secret code and gives you two clues: numbers of "bulls" and "cows". 
+    
+          What does this mean? A bull is a digit which is present in both the codes in the same position. 
+    
+          And a cow is a digit which is present in both the codes in the different position. 
+    
+          For example, if the secret code is 7058 and you guess 7568, an answer will be "one cow(s) and two bull(s)" (but you won't know which digit is a bull and which digit is a cow). That's all!
+          </textarea>              
+          
+      
+      </div>
+    
+    </div>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

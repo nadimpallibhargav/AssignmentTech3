@@ -9,11 +9,18 @@ header{
   text-transform: uppercase;
   font-weight: 600;
 }
-.output{
-  min-height: 410px;
-}
+
 @media(max-width: 768px){
   .input-group.mb-5.w-25.m-auto {
       width: 100% !important;
   }
 }
+@media(min-width: 992px){
+  .col-lg-6 div.border{
+    min-height: 378px;
+  }
+}
+.error{
+  color: red;
+}
+

@@ -32,7 +32,7 @@ function check(){
 	var userNumber=$("#try").val().toString();
 	var vache=0;
 	var toreau=0;
-	if (verifyEntry(userNumber)===false){$(".result").prepend(userNumber+" - \n\nInvalid entry or duplicated number, please try again.\r\n\n")} else {
+	if (verifyEntry(userNumber)===false){$(".result").prepend('<p class="border border-danger text-white p-2"><b>'+userNumber+'</b> - Invalid entry or duplicated number, please try again.</p>')} else {
 	for (var n=0; n<4; n++){
 		for (var i=0; i<4; i++){
 		if (userNumber.charAt(i) === rnd.charAt(n) && i==n)
@@ -42,9 +42,9 @@ function check(){
 	}
 		counter++;
 		if (toreau===4){
-			$(".result").prepend(userNumber+ " - 4 bulls, YOU WIN after "+counter+" tries.\r\n"+"A new number has been set, play again.\r\n");
+			$(".result").prepend(' <p class="border border-sucess text-white p-2"><b>'+userNumber+'</b> - 4 bulls, YOU WIN after <b>'+counter+'</b> tries. A new number has been set, play again.</p>');
 			rnd=computerNumber();
 			counter=0;}
-		else{$(".result").prepend(userNumber+ " - " + vache +" cow(s) and "+toreau+" bull(s), tries: "+counter+"\r\n");}}
+		else{$(".result").prepend(' <p class="border border-info text-white p-2"><b>'+userNumber+'</b> -   '+ vache +' cow(s) and '+toreau+' bull(s), <b>[ Tries: '+counter+' ]</b> </p>');}}
 		$("#try").val("");
 }

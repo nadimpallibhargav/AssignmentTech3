@@ -12,7 +12,7 @@
 
 <head></head>
 <body>
-  <header><nav class="text-center bg-primary text-white py-4"><div><i class="fas fa-gamepad"></i></div><span>Bulls and Cows game</span></nav></header>
+  <header><nav class="text-center bg-primary text-white py-4"><div><i class="fas fa-gamepad"></i></div><span>Cows & Bulls</span></nav></header>
   <div class="w-100 container-fluid text-center py-5 bg-secondary">
 	    
     <div class="input-group mb-5 w-25 m-auto">
@@ -22,24 +22,28 @@
     </div>
     <div class="row">
       <div class="col-lg-6 mb-3">
-        <div class="w-100 text-white mb-3"> <h4>RESULT</h4></div>
-        <div class="output bg-white p-5 text-center">
+        
+        <div class="output border p-2 py-5  text-center">
+          <div class="w-100 text-info mb-3"> <h4>RESULT</h4></div>
           <p class="result"></p>
         </div>
       </div>
       <div class="col-lg-6">
       
-          <div class="w-100 text-white mb-3"> <h4>ABOUT GAME</h4></div>
+          
          
-          <textarea class="form-control p-5 text-center" name="console" id="console" cols="30" rows="13">
-          You enter your guess code, computer compares it with the secret code and gives you two clues: numbers of "bulls" and "cows". 
-    
-          What does this mean? A bull is a digit which is present in both the codes in the same position. 
-    
-          And a cow is a digit which is present in both the codes in the different position. 
-    
-          For example, if the secret code is 7058 and you guess 7568, an answer will be "one cow(s) and two bull(s)" (but you won't know which digit is a bull and which digit is a cow). That's all!
-          </textarea>              
+          <div class="border p-2 py-5 text-center text-white">
+            <div class="w-100 text-info mb-3"> <h4>ABOUT GAME</h4></div>
+            
+            <p class="bg-info p-2">You enter your guess code, computer compares it with the secret code and gives you two clues: numbers of "bulls" and "cows". </p>
+      
+            <p class="bg-info p-2"> does this mean? A bull is a digit which is present in both the codes in the same position. </p>
+      
+            <p class="bg-info p-2">And a cow is a digit which is present in both the codes in the different position. </p>
+      
+            <p class="bg-info p-2">For example, if the secret code is 7058 and you guess 7568, an answer will be "one cow(s) and two bull(s)" (but you won't know which digit is a bull and which digit is a cow). That's all!</p>
+            
+          </div>              
           
       
       </div>
